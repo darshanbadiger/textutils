@@ -3,7 +3,7 @@ import { useState } from 'react';
 import React from 'react';
 import './App.css';
 import Alert from './components/Alert';
-//import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 // import {
@@ -53,9 +53,9 @@ function App() {
         <Navbar title = "TextUtils" aboutText="About TextUtils" mode={mode} togglemode={togglemode}/>
         <Alert alert={alert}/>
         <div className="container my-3">
-            <Textform showAlert={showAlert} heading = "Enter the text" mode={mode}/>
+            <Textform showAlert={showAlert} heading = "Word Counter and Character Counter" mode={mode}/>
         </div>
-       {/* <About/> */}
+       <About mode={mode}/>
           
   </>
   );
